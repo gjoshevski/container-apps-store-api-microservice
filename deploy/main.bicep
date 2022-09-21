@@ -1,7 +1,7 @@
 param location string = resourceGroup().location
 param environmentName string = 'env-${uniqueString(resourceGroup().id)}'
 
-param minReplicas int = 0
+param minReplicas int = 1
 
 param nodeImage string 
 param nodePort int = 3000
